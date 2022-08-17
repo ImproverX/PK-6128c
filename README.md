@@ -2,7 +2,7 @@
 Восстановление схемы Вектор ПК-6128ц.
 
 Содержимое проекта:<br>
-[PK6128_Shema.DSN](https://github.com/ImproverX/PK-6128c/blob/main/PK6128_Shema.DSN) -- восстановленная схема в формате Proteus 7. В данном ПО возможна частичное моделирование работы схемы.<br>
+[PK6128_Shema.DSN](https://github.com/ImproverX/PK-6128c/blob/main/PK6128_Shema.DSN) -- восстановленная схема в формате Proteus 7. В данном ПО возможно частичное моделирование работы схемы.<br>
 [K155RE3.txt](https://github.com/ImproverX/PK-6128c/blob/main/K155RE3.txt) -- возможное содержимое ПЗУ D10 (К155РЕ3), в бинарном виде [K155RE3.bin](https://github.com/ImproverX/PK-6128c/blob/main/K155PE3.bin).<br>
 [K155RE3.MDF](https://github.com/ImproverX/PK-6128c/blob/main/K155RE3.MDF) -- модель для К155РЕ3, положите этот файл в "<директория протеуса>\MODELS" для работы моделирования схемы.<br>
 [PK6128_Shema.png](https://github.com/ImproverX/PK-6128c/blob/main/PK6128_Shema.png) -- схема в формате PNG.<br>
