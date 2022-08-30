@@ -9447,7 +9447,7 @@ L3CA4:	mov	m,d
 	call	L3D3D		; копирование данных
 L3CD0:	ldax	d		; (на выходе DE=3939h)
 	ani	001H
-	jz	L3CED		; >> если нечет
+	jz	L3CED		; >> если последний бит =1
 	ldax	d
 	mvi	b,003H
 	dcr	a
