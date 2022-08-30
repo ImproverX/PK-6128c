@@ -12,4 +12,5 @@
 
 Другая информация по ПК-6128ц:<br>
 [Каталог "Базис"](http://sensi.org/scalar/categories/pk-6128c/)<br>
-[Форум на zx-pk.ru](https://zx-pk.ru/threads/8146-pk-6128ts-obsuzhdenie.html)
+[Форум на zx-pk.ru](https://zx-pk.ru/threads/8146-pk-6128ts-obsuzhdenie.html)<br>
+[Описание и программы для ПК-6128ц](http://raregame.ru/text/vector.html)
