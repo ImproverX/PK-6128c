@@ -781,7 +781,8 @@ L0402:	rst	6
 L0417:	call	L0583
 	rz
 	rst	1
-	inr	l
+	.db	02Ch
+;
 	push	d
 	call	L0583
 	pop	h
@@ -832,7 +833,8 @@ L0455:	xchg
 	xthl
 	call	L08C7
 	rst	1
-	sbb	m
+	.db	09Eh
+;
 	call	L08C4
 	push	h
 	call	L122E
@@ -1108,7 +1110,8 @@ L0624:	mov	a,m
 ;
 L0632:	call	L0ABB
 	rst	1
-	xra	h
+	.db	0ACh
+;
 	lda	X3F2C
 	push	psw
 	push	d
@@ -1162,7 +1165,8 @@ P067E:	call	L0F59
 	cpi	08CH
 	jz	L068B
 	rst	1
-	adc	b
+	.db	088h
+;
 	dcx	h
 L068B:	mov	c,e
 L068C:	dcr	c
@@ -1178,7 +1182,8 @@ P069A:	call	L08D3
 	cpi	088H
 	jz	L06A6
 	rst	1
-	ana	c
+	.db	0A1h
+;
 	dcx	h
 L06A6:	rst	5
 	jz	0061Dh	;!!!!!!!!!!!!!!!!!!!!!!!!
@@ -1292,7 +1297,8 @@ L076A:	rst	2
 L076E:	push	psw
 	call	00F58h	;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	rst	1
-	dad	h
+	.db	029h
+;
 	dcx	h
 	pop	psw
 	cpi	09FH
@@ -1591,10 +1597,12 @@ L0943:	xra	a
 	sui	0AEH
 	jnc	L09BC
 L0992:	rst	1
-	.db	028H	;????????????????????????
+	.db	028H
+;
 	call	L08D3
 	rst	1
-	dad	h
+	.db	029h
+;
 	ret
 ;
 L099A:	mvi	d,07DH
@@ -1642,12 +1650,12 @@ L09CF:	push	b
 	jmp	L0A0E
 ;
 L09ED:	rst	1
-;
-	.db	028H	;?????????????????????
+	.db	028H
 ;
 	call	L08D3
 	rst	1
-	inr	l
+	.db	02Ch
+;
 	call	008C8h	;!!!!!!!!!!!!!!!!!!!!!
 	xchg
 	lhld	X3F60
@@ -1783,7 +1791,8 @@ z0AB1:	dcx	h
 	rst	2
 	rz
 	rst	1
-	inr	l
+	.db	02Ch
+;
 P0AB6:	lxi	b,z0AB1
 	push	b
 ;
@@ -1885,7 +1894,8 @@ L0B46:	push	d
 	cpi	02CH
 	jz	L0B46
 	rst	1
-	dad	h
+	.db	029h
+;
 	shld	X3F4C
 	pop	h
 	shld	X3F2B
@@ -2045,15 +2055,16 @@ P0C51:	call	L0CB1
 	push	d
 	call	L0CA3
 	rst	1
-;
-	.db	028H	;?????????????????
+	.db	028H
 ;
 	call	L0ABB
 	call	L08C7
 	rst	1
-	dad	h
+	.db	029h
+;
 	rst	1
-	xra	h
+	.db	0ACh
+;
 	mov	b,h
 	mov	c,l
 	xthl
@@ -2109,7 +2120,8 @@ L0CA3:	push	h
 	jmp	L00A7
 ;
 L0CB1:	rst	1
-	ana	b
+	.db	0A0h
+;
 	mvi	a,080H
 	sta	X3F48
 	ora	m
@@ -2490,10 +2502,12 @@ P0EF8:	xchg
 	cpi	029H
 	jz	L0F0A
 	rst	1
-	inr	l
+	.db	02Ch
+;
 	call	L0F59
 L0F0A:	rst	1
-	dad	h
+	.db	029h
+;
 	pop	psw
 	xthl
 	lxi	b,00EC4H
@@ -2532,7 +2546,8 @@ P0F3A:	call	L08C4
 ;
 L0F48:	xchg
 	rst	1
-	dad	h
+	.db	029h
+;
 L0F4B:	pop	b
 	pop	d
 	push	b
@@ -2543,7 +2558,8 @@ L0F4B:	pop	b
 	ret
 ;
 L0F55:	rst	1
-	inr	l
+	.db	02Ch
+;
 	mvi	b,0D7H
 L0F59:	call	L08C4
 L0F5C:	call	L0567
@@ -4264,12 +4280,12 @@ L19CC:	push	h
 ;
 L19DC:	rst	2
 	rst	1
-;
-	.db	028H	;????????????????????????
+	.db	028H
 ;
 	call	L0ABB
 	rst	1
-	dad	h
+	.db	029h
+;
 	xra	a
 	sta	X3F2C
 	jmp	L178A
@@ -4293,7 +4309,8 @@ L19F5:	call	L08C4
 P1A0B:	call	L19F5
 	push	d
 	rst	1
-	inr	l
+	.db	02Ch
+;
 	call	L08C4
 	xthl
 	push	h
@@ -4445,13 +4462,15 @@ P1B12:	call	L1F57
 	dcx	h
 	rst	2
 	rst	1
-	inr	l
+	.db	02Ch
+;
 	call	L08C4
 	rst	5
 	call	L056B
 	push	d
 	rst	1
-	inr	l
+	.db	02Ch
+;
 	call	L08C4
 	rst	5
 	call	L056B
@@ -4509,7 +4528,8 @@ P1B78:	call	L1F57
 	lxi	d,L0000
 	jnz	L1B9C
 L1B93:	rst	1
-	inr	l
+	.db	02Ch
+;
 	call	L08C4
 	rst	5
 	call	L056B
@@ -4892,7 +4912,8 @@ L1E10:	call	L1F57
 	ret
 ;
 _1E1E:	rst	1	;?????????
-	inr	l
+	.db	02Ch
+;
 	call	L08C4
 	rst	5
 	call	L056B
@@ -5736,7 +5757,8 @@ L2585:	call	L1F57
 	pop	h
 	push	b
 	rst	1
-	inr	l
+	.db	02Ch
+;
 	call	L08C4
 	rst	5
 	call	L056B
@@ -7687,7 +7709,8 @@ P3258:	call	L2585
 	cpi	02CH
 	jnz	L32F7
 	rst	1
-	inr	l
+	.db	02Ch
+;
 	call	L08C4
 	push	h
 	lxi	b,08922H
@@ -7699,7 +7722,8 @@ P3258:	call	L2585
 	shld	X3DF5
 	pop	h
 	rst	1
-	inr	l
+	.db	02Ch
+;
 	call	L08C4
 	push	h
 	lxi	b,08922H
@@ -7715,7 +7739,8 @@ P3258:	call	L2585
 	cpi	02CH
 	jnz	L32E1
 	rst	1
-	inr	l
+	.db	02Ch
+;
 	call	L08C4
 	push	h
 	lxi	b,08900H
@@ -8515,7 +8540,8 @@ L37B9:	call	L08C4
 	shld	X3DF5
 	xchg
 	rst	1
-	inr	l
+	.db	02Ch
+;
 	call	L08C4
 	rst	5
 	call	L056B
@@ -8523,7 +8549,8 @@ L37B9:	call	L08C4
 	shld	X3DF7
 	xchg
 	rst	1
-	inr	l
+	.db	02Ch
+;
 	call	L08C4
 	rst	5
 	call	L056B
@@ -9447,7 +9474,7 @@ L3CA4:	mov	m,d
 	call	L3D3D		; копирование данных
 L3CD0:	ldax	d		; (на выходе DE=3939h)
 	ani	001H
-	jz	L3CED		; >> если последний бит =1
+	jz	L3CED		; >> если нечет
 	ldax	d
 	mvi	b,003H
 	dcr	a
