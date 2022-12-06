@@ -162,21 +162,21 @@ L0020:	mov	a,h		;<< RST4
 	sub	d
 	rnz
 	mov	a,l
-	sub	e
+	sub	e		;<< TRAP
 	ret
 ;
 X0026:	.dw	04301H
 ;
 L0028:	lda	X3F63		;<< RST5
 	ora	a
-	jnz	L11EB
+	jnz	L11EB		;<< RST5.5
 	ret
 ;
 L0030:	mov	c,m		;<< RST6
 	inx	h
 	mov	b,m
 	inx	h
-	jmp	L003B
+	jmp	L003B		;<< RST6.5
 ;
 	.db	00h
 ;
